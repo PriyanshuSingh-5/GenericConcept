@@ -9,17 +9,17 @@ namespace GenericConcept
     public class FindMaxNum
     {
         //to find max integer
-        public static int FindMaxInteger(int firstnumb,int secondnumb,int thirdnumb)
+        public static int FindMaxInteger(int firstnumb, int secondnumb, int thirdnumb)
         {
-            if(firstnumb.CompareTo(secondnumb)>0 && firstnumb.CompareTo(thirdnumb)>0 )
+            if (firstnumb.CompareTo(secondnumb) > 0 && firstnumb.CompareTo(thirdnumb) > 0)
             {
                 return firstnumb;
             }
-           else if (secondnumb.CompareTo(firstnumb) > 0 && secondnumb.CompareTo(thirdnumb) > 0)
+            else if (secondnumb.CompareTo(firstnumb) > 0 && secondnumb.CompareTo(thirdnumb) > 0)
             {
                 return secondnumb;
             }
-           else if (thirdnumb.CompareTo(firstnumb) > 0 && thirdnumb.CompareTo(secondnumb) > 0)
+            else if (thirdnumb.CompareTo(firstnumb) > 0 && thirdnumb.CompareTo(secondnumb) > 0)
             {
                 return thirdnumb;
             }
@@ -44,6 +44,32 @@ namespace GenericConcept
                 return thirdValue;
             }
             return firstValue;
+        }
+
+        public static string MaximumString(string firstString, string secondString, string thirdString)
+        {
+            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0 ||
+                firstString.CompareTo(secondString) >= 0 && firstString.CompareTo(thirdString) > 0 ||
+                firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) >= 0)
+            {
+                return firstString;
+            }
+
+            if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0 ||
+                secondString.CompareTo(firstString) >= 0 && secondString.CompareTo(thirdString) > 0 ||
+                secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) >= 0)
+            {
+                return secondString;
+            }
+
+            if (thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) > 0 ||
+                thirdString.CompareTo(firstString) >= 0 && thirdString.CompareTo(secondString) > 0 ||
+                thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) >= 0)
+            {
+                return thirdString;
+            }
+
+            return firstString;
         }
     }
 }

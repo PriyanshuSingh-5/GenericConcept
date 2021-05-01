@@ -20,6 +20,10 @@ namespace GenericConcept
             Generic<double> genericDouble = new Generic<double>(doubleArray);
             genericDouble.PrintMaxValue();
 
+            //String array
+            string[] stringArray = { "111", "222", "333", "55", "999" };
+            Generic<string> genericString = new Generic<string>(stringArray);
+            genericString.PrintMaxValue();
         }
     }
 }
