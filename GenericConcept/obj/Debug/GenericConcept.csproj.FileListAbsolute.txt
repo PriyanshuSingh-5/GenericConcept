@@ -1,0 +1,7 @@
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\obj\Debug\GenericConcept.csprojAssemblyReference.cache
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\obj\Debug\GenericConcept.csproj.CoreCompileInputs.cache
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\bin\Debug\GenericConcept.exe.config
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\bin\Debug\GenericConcept.exe
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\bin\Debug\GenericConcept.pdb
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\obj\Debug\GenericConcept.exe
+C:\Users\K.R.DHASHNIGA\source\repos\GenericConcept\GenericConcept\obj\Debug\GenericConcept.pdb
