@@ -39,5 +39,33 @@ namespace MaxNumberMSTest
             string result = FindMaxNum.MaximumString(a, b, c);
             Assert.AreEqual(result, max);
         }
+
+        [TestMethod]
+        public void MaximumNumberGenericInteger_PassThreeNumbers_ReturnMaximumNumber()
+        {
+            int[] intArray = { 112, 344, 432, 555, 678 };
+            Generic<int> generic = new Generic<int>(intArray);
+            int result = generic.MaxMethod();
+            Assert.AreEqual(result, 678);
+        }
+
+        //UC4 more than 3 parameters
+        [TestMethod]
+        public void MaximumNumberGenericFloat_PassThreeNumbers_ReturnMaximumNumber()
+        {
+            double[] doubleArray = { 11.2, 34.4, 4.32, 55.5, 6.78 };
+            Generic<double> genericDouble = new Generic<double>(doubleArray);
+            double result = genericDouble.MaxMethod();
+            Assert.AreEqual(result, 55.5);
+        }
+
+        [TestMethod]
+        public void MaximumNumberGenericString_PassThreeNumbers_ReturnMaximumNumber()
+        {
+            string[] stringArray = { "111", "222", "333", "55", "999" };
+            Generic<string> genericString = new Generic<string>(stringArray);
+            string result = genericString.MaxMethod();
+            Assert.AreEqual(result, "999");
+        }
     }
 }
