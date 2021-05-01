@@ -8,6 +8,7 @@ namespace GenericConcept
 {
     public class FindMaxNum
     {
+        //to find max integer
         public static int FindMaxInteger(int firstnumb,int secondnumb,int thirdnumb)
         {
             if(firstnumb.CompareTo(secondnumb)>0 && firstnumb.CompareTo(thirdnumb)>0 )

@@ -19,7 +19,7 @@ namespace GenericConcept
             Array.Sort(values);
             return values;
         }
-        void add(params int[] a)
+        void add(params int[] a) //specify a method parameter
         {
 
         }
@@ -30,7 +30,7 @@ namespace GenericConcept
             return sorted_values[sorted_values.Length - 1];
         }
 
-        public T MaxMethod()
+        public T MaxMethod() //To get max value
         {
             var max = MaxValue(this.value);
             return max;
@@ -39,7 +39,7 @@ namespace GenericConcept
         public void PrintMaxValue()
         {
             var max = MaxValue(this.value);
-            Console.WriteLine("Maximum value is " + max);
+            Console.WriteLine("Maximum value is " + max); //print max value
         }
     }
 }
