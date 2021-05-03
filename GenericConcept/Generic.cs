@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericConcept
 {
-    public class Generic<T> where T : IComparable
+    public class Generic<T>  ///Generic class
     {
 
       public T[] value;
@@ -20,11 +20,11 @@ namespace GenericConcept
         Array.Sort(values);
         return values;
     }
-    void add(params int[] a)
+    void add(params int[] a)  //param parameter
     {
 
     }
-    public T MaxValue(params T[] values) //parameters
+    public T MaxValue(params T[] values) //sorting maximum values
     {
         var sorted_values = Sort(values);
 
@@ -37,7 +37,7 @@ namespace GenericConcept
         return max;
     }
 
-    public void PrintMaxValue()
+    public void PrintMaxValue()   //To print max values
     {
         var max = MaxValue(this.value);
         Console.WriteLine("Maximum value is " + max);

@@ -9,7 +9,7 @@ namespace GenericConcept
     public class FindMaxNum
     {
         //to find max integer
-        public static int FindMaxInteger(int firstnumb, int secondnumb, int thirdnumb)
+        public static int FindMaxInteger(int firstnumb, int secondnumb, int thirdnumb) //method for max integers
         {
             if (firstnumb.CompareTo(secondnumb) > 0 && firstnumb.CompareTo(thirdnumb) > 0)
             {
@@ -29,7 +29,7 @@ namespace GenericConcept
                 return 0;
             }
         }
-        public static float MaximumFloatNumber(float firstValue, float secondValue, float thirdValue)
+        public static double MaximumFloatNumber(double firstValue, double secondValue,double thirdValue)  //method for max double value
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
@@ -46,7 +46,7 @@ namespace GenericConcept
             return firstValue;
         }
 
-        public static string MaximumString(string firstString, string secondString, string thirdString)
+        public static string MaximumString(string firstString, string secondString, string thirdString) //method for max string or char 
         {
             if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0 ||
                 firstString.CompareTo(secondString) >= 0 && firstString.CompareTo(thirdString) > 0 ||

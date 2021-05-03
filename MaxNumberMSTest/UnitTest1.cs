@@ -20,12 +20,12 @@ namespace MaxNumberMSTest
 
         //UC2
         [TestMethod]
-        [DataRow(1.1f, 2.2f, 3.3f, 3.3f)]
-        [DataRow(1.1f, 4.4f, 2.2f, 4.4f)]
-        [DataRow(5.5f, 2.2f, 1.1f, 5.5f)]
-        public void MaximumFloatNumber__ReturnMaximumNumber(float a, float b, float c, float max)
+        [DataRow(1.1, 2.2, 3.3, 3.3)]
+        [DataRow(1.1, 4.4, 2.2, 4.4)]
+        [DataRow(5.5, 2.2, 1.1, 5.5)]
+        public void MaximumFloatNumber__ReturnMaximumNumber(double a, double b, double c, double max)
         {
-            float result = FindMaxNum.MaximumFloatNumber(a, b, c);
+            double result = FindMaxNum.MaximumFloatNumber(a, b, c);
             Assert.AreEqual(result, max);
         }
 
@@ -40,6 +40,8 @@ namespace MaxNumberMSTest
             Assert.AreEqual(result, max);
         }
 
+
+        //UC4 more than 3 parameters
         [TestMethod]
         public void MaximumNumberGenericInteger_PassThreeNumbers_ReturnMaximumNumber()
         {
@@ -49,7 +51,7 @@ namespace MaxNumberMSTest
             Assert.AreEqual(result, 678);
         }
 
-        //UC4 more than 3 parameters
+        
         [TestMethod]
         public void MaximumNumberGenericFloat_PassThreeNumbers_ReturnMaximumNumber()
         {
